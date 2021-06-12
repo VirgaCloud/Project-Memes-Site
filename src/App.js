@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
    
-      <div class="titlebcg"><h1 className="title">MEMS FOR PROGRAMERS</h1></div>
+      <div className="titlebcg"><h1 className="title">MEMS FOR PROGRAMERS</h1></div>
       <Router>
-      <div class="table">
+      <div className="table">
         <ul className="nav_buttons">
           <button>
             <NavLink exact to ="/" >REGULAR</NavLink> 

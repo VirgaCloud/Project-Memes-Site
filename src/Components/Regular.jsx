@@ -17,7 +17,7 @@ export const Regular = () => {
         <hr></hr>
         <h2>REGULAR MEMS {id}</h2>
 
-<Memslist/>
+<Memslist />
 
 <hr></hr>
         <Button variant="outlined" class="back-nav" onClick={navigateBack}>

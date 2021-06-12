@@ -1,6 +1,5 @@
-export const memesData = {
-    memes: [{
-            id: 1,
+export const memesData = [
+        {    id: 1,
             title: 'React developers at the end of a sprint',
             img: "https://cdn.pixabay.com/photo/2018/05/31/15/06/not-hear-3444212_960_720.jpg",
             upvote: 0,
@@ -30,6 +29,5 @@ export const memesData = {
             upvote: 0,
             downvote: 0,
             favourite: false,
-        },
-    ]
-};
+        }
+ ]

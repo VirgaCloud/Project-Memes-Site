@@ -6,16 +6,51 @@ import { faStar } from '@fortawesome/react-fontawesome';
 
 import { useDispatch } from "react-redux";
 import { addUpVote } from "../redux/actions";
-
+import { addDownVote } from "../redux/actions";
+import { useSelector } from "react-redux";
 import List from "@material-ui/core/List";
 
 
-export const Memslist = (state) => {
+export const Memslist = () => {
   const dispatch = useDispatch();
-  const ooo=[...state];
-  console.log(ooo);
+  const memes = useSelector((state) => state.memesData);
+  
 
-  // const Image = props => <img height="450" width="600" border="15" src={props.url}></img>;
+console.log(memes)
+ 
+const element = (array) => array.map(( {  img, upvote, downvote, id }) => {
+  
+  // const upvote=meme.upvote;
+  // const downvote=meme.downvote;
+  // const id = meme.id;
+  return(
+    <li key={id}>
+    <div>
+            
+            <div> <img className="wrap" src={img} /> </div>
+            <button className="opinion_btn" onClick={() => dispatch(addUpVote({ upvote, id }))}> upvote</button>
+            <span className=""> {upvote} </span>
+            <button className="opinion_btn" onClick={() => dispatch(addDownVote({ downvote, id }))}> downvote</button>
+            <span className=""> {downvote} </span>
+          
+            </div>
+    
+    </li>
+  )})
+
+    return (
+      <List >{element(memes)}</List>
+          )
+
+     
+}
+
+// setMemes({regular: INITIAL_ARRAY, hot: []});
+//     const numbers = [1, 2, 3, 4, 5];
+// const doubled = numbers.map((number) => number * 2);
+// console.log(doubled);
+
+ // const Image = props => <img height="450" width="600" border="15" src={props.url}></img>;
   
 
   
@@ -57,29 +92,3 @@ export const Memslist = (state) => {
   //   ]
   // );
 
-
-const element = (array) => array.map((meme) => {
-  
-  const upvote=meme.upvote;
-  const id = meme.id;
-  return(
-  <div>
-            
-  <div className="wrap">  {meme.img} </div>
-  <span className=""> {meme.upvote} </span>
-  <button className="opinion_btn" onClick={() => dispatch(addUpVote({ upvote, id }))}> downvote</button>
-  <span className=""> {meme.downvote} </span>
-
-  </div>)})
-
-    return (
-      <List>{element(state)}</List>
-          )
-
-     
-}
-
-// setMemes({regular: INITIAL_ARRAY, hot: []});
-//     const numbers = [1, 2, 3, 4, 5];
-// const doubled = numbers.map((number) => number * 2);
-// console.log(doubled);

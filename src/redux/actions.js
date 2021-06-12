@@ -8,3 +8,11 @@ export const addUpVote = ({ upvote, id }) => ({
       id,
     },
   });
+
+  export const addDownVote = ({ downvote, id }) => ({
+    type: "ADD_UP_VOTE",
+    payload: {
+      upvote: downvote + 1,
+      id,
+    },
+  });
