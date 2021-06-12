@@ -1,38 +1,129 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  margin: auto;
+  height: 100%;
   text-align: center;
+  background-color: rgb(204, 204, 204);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.table{
+  background-color: rgb(68, 66, 66);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.titlebcg{
+  background-color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+Error {
+  color: yellow;
+}
+
+.title {
+  padding: 30px 0 20px;
+  text-align: center;  
+}
+
+.memTitle{
+  margin: 0 auto 20px;
+  padding: 10px;
+  width: 600px;
+  font-size: 20px;
+  line-height: 80px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+
+a {
+  padding: 10px 30px 10px;
+  color: rgb(153, 153, 153);
+  text-decoration: none;
+}
+
+.opinion{
+    margin: 20px auto 40px;
+display: inline-block;
+font-size: 20px;
+font-weight: bold;
+}
+
+
+
+.active {
+  font-weight: bold;
+  color: rgb(4, 4, 4);
+  text-decoration: none;
+}
+
+button {
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  padding: 5px 10px;
+  width: 200px;
+  color: #000;
+  font-size: 24px;
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: rgb(247, 248, 197);
+  border-radius: 5px;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.576);
+}
+
+button hover{
+  cursor: pointer; 
+  
+}
+
+.opinion_btn{
+  margin: 10px;
+  width: 100px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgb(63, 63, 63);
+  border: none;
   color: white;
+  box-shadow: 3px 3px 3px grey;
 }
 
-.App-link {
-  color: #61dafb;
+.star{
+  width: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgb(63, 63, 63);
+  border: none;
+  color: white;
+  box-shadow: 3px 3px 3px grey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .starIcon{
+  height: 30px;
+} */
+
+h2{
+  padding: 10px;
+}
+
+.back-nav{
+  margin: 30px 20px 50px 20px;
+  width: 80px;
+  background-color: transparent;
+  font-size: 16px;
+
+}
+
+ul{
+ padding: 20px;
+}
+
+li{
+  list-style-type: none;
+}
+
+.wrap{
+height: 450px;
 }
