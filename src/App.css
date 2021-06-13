@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -11,11 +11,11 @@
   background-color: rgb(204, 204, 204);
 }
 
-.table{
+.table {
   background-color: rgb(68, 66, 66);
 }
 
-.titlebcg{
+.titlebcg {
   background-color: #fff;
 }
 
@@ -25,11 +25,11 @@ Error {
 
 .title {
   padding: 30px 0 20px;
-  text-align: center;  
+  text-align: center;
 }
 
-.memTitle{
-  margin: 0 auto 20px;
+.memTitle {
+  margin: 0px auto 10px;
   padding: 10px;
   width: 600px;
   font-size: 20px;
@@ -44,14 +44,12 @@ a {
   text-decoration: none;
 }
 
-.opinion{
-    margin: 20px auto 40px;
-display: inline-block;
-font-size: 20px;
-font-weight: bold;
+.opinion {
+  display: inline-block;
+  margin: 20px auto 40px;
+  font-size: 20px;
+  font-weight: bold;
 }
-
-
 
 .active {
   font-weight: bold;
@@ -74,12 +72,11 @@ button {
   box-shadow: 3px 3px rgba(0, 0, 0, 0.576);
 }
 
-button hover{
-  cursor: pointer; 
-  
+button hover {
+  cursor: pointer;
 }
 
-.opinion_btn{
+.opinion_btn {
   margin: 10px;
   width: 100px;
   font-size: 14px;
@@ -90,7 +87,7 @@ button hover{
   box-shadow: 3px 3px 3px grey;
 }
 
-.star{
+.star {
   width: 40px;
   font-size: 14px;
   text-transform: uppercase;
@@ -104,26 +101,38 @@ button hover{
   height: 30px;
 } */
 
-h2{
+h2 {
   padding: 10px;
 }
 
-.back-nav{
+.back-nav {
   margin: 30px 20px 50px 20px;
   width: 80px;
   background-color: transparent;
   font-size: 16px;
-
 }
 
-ul{
- padding: 20px;
+ul {
+  padding: 20px;
 }
 
-li{
+li {
   list-style-type: none;
 }
 
-.wrap{
-height: 450px;
+.wrap {
+  margin: 20px auto 0px;
+  padding: 0;
+  height: 450px;
+  width: 600px;
+  border: 20px solid black;
+}
+
+.box {
+  margin: -4px;
+  padding: 0;
+}
+
+.button404{
+ font-size: 200px;
 }
