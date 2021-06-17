@@ -10,15 +10,18 @@ import { Hot } from "./Components/Hot.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <div className="titlebcg">
-        <h1 className="title">MEMS FOR PROGRAMERS</h1>
-      </div>
-      <Router>
+    <Router>
+      <div className="App">
+        <div className="titlebcg">
+          <h1 className="title">MEMS FOR PROGRAMERS</h1>
+        </div>
+
         <div className="table">
           <ul className="nav_buttons">
             <button>
-              <NavLink exact to="/">REGULAR</NavLink>
+              <NavLink exact to="/">
+                REGULAR
+              </NavLink>
             </button>
             <button>
               <NavLink to="/hot">HOT</NavLink>
@@ -33,11 +36,15 @@ function App() {
             <Hot />
           </Route>
           <Route path="*">
-            <div className="button404">404</div>
+            <div className="error404">
+              404
+              <br />
+              Page not found
+            </div>
           </Route>
         </Switch>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

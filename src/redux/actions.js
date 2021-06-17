@@ -4,13 +4,15 @@ export const ADD_DOWN_VOTE = "ADD_DOWN_VOTE";
 export const addUpVote = ({ upvote, id }) => ({
   type: "ADD_UP_VOTE",
   payload: {
-    upvote: upvote + 1, id,
+    upvote: upvote + 1,
+    id,
   },
 });
 
 export const addDownVote = ({ downvote, id }) => ({
-  type: "ADD_UP_VOTE",
+  type: "ADD_DOWN_VOTE",
   payload: {
-    upvote: downvote + 1, id,
+    downvote: downvote + 1,
+    id,
   },
 });

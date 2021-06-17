@@ -1,4 +1,5 @@
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Button from "@material-ui/core/Button";
 import { Memslist } from "./Memslist";
 
@@ -9,14 +10,19 @@ export const Hot = () => {
     history.goBack();
   };
 
+  const memes = useSelector((state) => state.memesData);
+  const hotMemes = memes.filter((meme) => {
+    return
+  });
+
   return (
     <div>
       <hr></hr>
       <h2>HOT MEMS</h2>
-      <Memslist />
+      <Memslist array={hotMemes} />
       <hr></hr>
-      <Button variant="outlined" className="back-nav" onClick={navigateBack}>
-      <p>Back</p>
+      <Button variant="outlined" class="back-nav" onClick={navigateBack}>
+        Back
       </Button>
     </div>
   );

@@ -4,10 +4,12 @@ import { ADD_DOWN_VOTE } from "./actions";
 import { memesData } from "./states";
 
 export const reducer = (
-  prevState = {memesData,
-  }, action) => {
+  prevState = {
+    memesData,
+  },
+  action
+) => {
   const memes = [...prevState.memesData];
-  console.log(memes);
 
   switch (action.type) {
     case ADD_UP_VOTE: {
@@ -20,9 +22,7 @@ export const reducer = (
         }
         return meme;
       });
-      return {
-        newState,
-      };
+      return { memesData: newState };
     }
     case ADD_DOWN_VOTE: {
       const newState = memes.map((meme) => {
@@ -34,9 +34,7 @@ export const reducer = (
         }
         return meme;
       });
-      return {
-        newState,
-      };
+      return { memesData: newState };
     }
     default:
       return prevState;
