@@ -5,21 +5,18 @@ import { Memslist } from "./Memslist";
 
 export const Hot = () => {
   const history = useHistory();
-
   const navigateBack = () => {
     history.goBack();
   };
 
   const memes = useSelector((state) => state.memesData);
-  const hotMemes = memes.filter((meme) => {
-    return
-  });
-
+  const hot = memes.filter(({upvote, downvote}) => upvote - downvote >= 5);
+  
   return (
     <div>
       <hr></hr>
       <h2>HOT MEMS</h2>
-      <Memslist array={hotMemes} />
+      <Memslist array={hot} />
       <hr></hr>
       <Button variant="outlined" class="back-nav" onClick={navigateBack}>
         Back

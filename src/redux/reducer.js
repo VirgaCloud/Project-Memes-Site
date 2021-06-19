@@ -1,15 +1,14 @@
 import { ADD_UP_VOTE } from "./actions";
 import { ADD_DOWN_VOTE } from "./actions";
-
 import { memesData } from "./states";
 
 export const reducer = (
-  prevState = {
+  currentState = {
     memesData,
   },
   action
 ) => {
-  const memes = [...prevState.memesData];
+  const memes = [...currentState.memesData];
 
   switch (action.type) {
     case ADD_UP_VOTE: {
@@ -37,6 +36,6 @@ export const reducer = (
       return { memesData: newState };
     }
     default:
-      return prevState;
+      return currentState;
   }
 };

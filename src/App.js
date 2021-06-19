@@ -7,6 +7,9 @@ import {
 } from "react-router-dom";
 import { Regular } from "./Components/Regular.jsx";
 import { Hot } from "./Components/Hot.jsx";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+library.add(fas)
 
 function App() {
   return (
@@ -15,8 +18,7 @@ function App() {
         <div className="titlebcg">
           <h1 className="title">MEMS FOR PROGRAMERS</h1>
         </div>
-
-        <div className="table">
+        <div className="nav">
           <ul className="nav_buttons">
             <button>
               <NavLink exact to="/">
@@ -36,11 +38,7 @@ function App() {
             <Hot />
           </Route>
           <Route path="*">
-            <div className="error404">
-              404
-              <br />
-              Page not found
-            </div>
+            <div className="error404">404<br/>Page not found</div>
           </Route>
         </Switch>
       </div>
