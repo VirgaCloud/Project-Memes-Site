@@ -14,16 +14,16 @@ export const Regular = () => {
   const regular = memes.filter(({upvote, downvote}) => upvote - downvote < 5);
   
   return (
-    <>
-      <div>
-        <hr></hr>
-        <h2><FontAwesomeIcon icon={["fas", "grin-squint"]} /> REGULAR MEMS</h2>
-        <Memslist array={regular} />
-        <hr></hr>
+    <div>
+      <hr></hr>
+      <h2><FontAwesomeIcon icon={["fas", "grin-squint"]} /> REGULAR MEMS</h2>
+      <Memslist array={regular} />
+      <hr></hr>
+      <div className="backNav">
         <Button variant="outlined" className="back-nav" onClick={navigateBack}>
           Back
         </Button>
       </div>
-    </>
+    </div>
   );
 };

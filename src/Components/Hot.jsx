@@ -19,9 +19,11 @@ export const Hot = () => {
       <h2><FontAwesomeIcon icon={["fas", "fire"]} /> HOT MEMS</h2>
       <Memslist array={hot} />
       <hr></hr>
-      <Button variant="outlined" className="back-nav" onClick={navigateBack}>
-        Back
-      </Button>
+      <div className="backNav">
+        <Button variant="outlined" className="back-nav" onClick={navigateBack}>
+          Back
+        </Button>
+      </div>
     </div>
   );
 };
