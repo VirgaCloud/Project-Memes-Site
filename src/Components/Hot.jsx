@@ -2,6 +2,7 @@ import { useHistory } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Button from "@material-ui/core/Button";
 import { Memslist } from "./Memslist";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Hot = () => {
   const history = useHistory();
@@ -15,10 +16,10 @@ export const Hot = () => {
   return (
     <div>
       <hr></hr>
-      <h2>HOT MEMS</h2>
+      <h2><FontAwesomeIcon icon={["fas", "fire"]} /> HOT MEMS</h2>
       <Memslist array={hot} />
       <hr></hr>
-      <Button variant="outlined" class="back-nav" onClick={navigateBack}>
+      <Button variant="outlined" className="back-nav" onClick={navigateBack}>
         Back
       </Button>
     </div>

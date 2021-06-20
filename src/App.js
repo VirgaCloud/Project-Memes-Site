@@ -16,14 +16,12 @@ function App() {
     <Router>
       <div className="App">
         <div className="titlebcg">
-          <h1 className="title">MEMS FOR PROGRAMERS</h1>
+          <h1 className="title">MEMS FOR PROGRAMMERS</h1>
         </div>
         <div className="nav">
           <ul className="nav_buttons">
             <button>
-              <NavLink exact to="/">
-                REGULAR
-              </NavLink>
+              <NavLink exact to="/">REGULAR</NavLink>
             </button>
             <button>
               <NavLink to="/hot">HOT</NavLink>

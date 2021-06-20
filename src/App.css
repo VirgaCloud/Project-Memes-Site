@@ -27,7 +27,7 @@
 }
 
 .title {
-  padding: 100px 0 20px;
+  padding: 110px 0 20px;
   text-align: center;
 }
 
@@ -95,19 +95,8 @@ button:hover {
   background-color: rgb(25, 107, 83);
 }
 
-.star {
-  padding: 20px;
-  color:rgb(68, 66, 66); 
-}
-
-.star:hover {
-  padding: 20px;
-  color:rgb(202, 86, 86); 
-  cursor: pointer;
-}
-
 h2 {
-  padding: 10px;
+  padding-top: 20px;
 }
 
 .back-nav {
@@ -141,3 +130,18 @@ li {
 .error404 {
   font-size: 70px;
 }
+
+.starFav {
+  padding-left: 20px;
+  color:rgb(25, 107, 83); 
+  cursor: pointer;
+}
+
+.favourite {
+  color: rgb(202, 86, 86);
+ }
+
+
+
+
+

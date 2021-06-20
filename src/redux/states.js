@@ -13,7 +13,7 @@ export const memesData = [
     img: "https://cdn.pixabay.com/photo/2016/11/13/21/46/sheep-1822137_960_720.jpg",
     upvote: 0,
     downvote: 0,
-    favourite: false,
+    favourite: true,
   },
   {
     id: 3,
@@ -29,6 +29,6 @@ export const memesData = [
     img: "https://cdn.pixabay.com/photo/2015/10/12/15/01/cat-984097_960_720.jpg",
     upvote: 0,
     downvote: 0,
-    favourite: false,
+    favourite: true,
   },
 ];
